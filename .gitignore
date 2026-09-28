@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
+# Backups — MUHIMMANCI
+*.backup
+*.backup_*
+*.bak
+*.bak_*
+*.actbak
+*.premaster
+
+# Folders — MUHIMMANCI
+BOT-DEPLOY/
+_backups/
+backup_*/
+data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

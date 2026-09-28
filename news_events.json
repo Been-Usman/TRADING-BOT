@@ -1,0 +1,17 @@
+[
+  {
+    "title": "US Non-Farm Payrolls",
+    "currency": "USD",
+    "time": "2026-09-15T12:30:00Z"
+  },
+  {
+    "title": "ECB Interest Rate Decision",
+    "currency": "EUR",
+    "time": "2026-09-16T11:45:00Z"
+  },
+  {
+    "title": "UK CPI",
+    "currency": "GBP",
+    "time": "2026-09-17T07:00:00Z"
+  }
+]

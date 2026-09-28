@@ -1,0 +1,40 @@
+services:
+  - type: worker
+    name: mt-trading-bot
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: METAAPI_TOKEN
+        sync: false
+      - key: METAAPI_ACCOUNT_ID
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: SYMBOLS
+        value: US30,XAUUSD,EURUSD
+      - key: TIMEFRAME
+        value: 1h
+      - key: EMA_FAST
+        value: "50"
+      - key: EMA_SLOW
+        value: "200"
+      - key: BREAKOUT_LOOKBACK
+        value: "20"
+      - key: ATR_PERIOD
+        value: "14"
+      - key: ATR_SL_MULTIPLIER
+        value: "2.0"
+      - key: ATR_TP_MULTIPLIER
+        value: "3.0"
+      - key: RISK_PER_TRADE_PCT
+        value: "1.0"
+      - key: MAX_DAILY_LOSS_PCT
+        value: "3.0"
+      - key: MAX_CONCURRENT_TRADES
+        value: "3"
+      - key: POLL_INTERVAL_MS
+        value: "60000"
